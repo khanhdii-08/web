@@ -3,6 +3,7 @@ body {
   background-color: #fff;
   height: 200vh;
   position: relative; }
+  
   body:before {
     content: "";
     position: absolute;

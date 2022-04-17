@@ -17,13 +17,18 @@ body:before {
   transition: .3s all ease;
   opacity: 0;
   visibility: hidden;
-  z-index: 1; }
+  z-index: 1;
+}
+
 body.offcanvas-menu:before {
   opacity: 1;
-  visibility: visible; }
+  visibility: visible;
+}
 
 .site-navbar {
-  background-color: aquamarine;}
+  background-color: aquamarine;
+}
+
 .site-navbar {
   width: 100%;
   display: inline-block;
@@ -41,7 +46,7 @@ body.offcanvas-menu:before {
 }
 
 .nav-input-search {
-  border: none; 
+  border: none;
 }
 
 
@@ -53,9 +58,11 @@ body.offcanvas-menu:before {
 .btn-search:focus {
   box-shadow: none;
 }
+
 .nav-icon-search {
   font-size: 15px;
 }
+
 /* .nav-text-box {
   width: 92px;
 } */
@@ -71,15 +78,26 @@ body.offcanvas-menu:before {
   margin-bottom: 0;
 }
 
-.dropdown {
+.site-nav-wrap {
+  list-style-type: none;
+  margin: 10px 0px 10px 0px;
+  padding: 0;
+}
+
+.dropdown,
+.collapse {
   list-style-type: none;
 }
 
-.site-menu>li {
+.site-menu>li,
+.site-nav-wrap li,
+.collapse li {
   padding: 10px 0px;
 }
 
-.site-menu>li>a {
+.site-menu>li>a,
+.site-nav-wrap>li>a,
+.collapse>li>a {
   text-decoration: none;
   display: block;
   padding: 5px 20px;
@@ -95,6 +113,12 @@ body.offcanvas-menu:before {
   /* transition: .3s all ease; */
 }
 
+.site-nav-wrap>li:hover>a, .show>li:hover>a {
+  color: #007bff;
+}
+.site-nav-wrap>li, .show>li{
+  padding: 0;
+}
 .has-children {
   position: relative;
 }
@@ -129,7 +153,7 @@ body.offcanvas-menu:before {
   background-color: darkgray;
 }
 
-.has-children .dropdown.arrow-top {
+.has-children .dropdown {
   position: absolute;
 }
 
@@ -174,28 +198,47 @@ body.offcanvas-menu:before {
   float: right;
   margin-top: 8px;
 }
-.site-mobile-menu-body{
+
+.site-mobile-menu-body {
   overflow-y: scroll;
   position: relative;
   padding: 0 20px 20px 20px;
-  height: calc(100vh - 52px);
-  padding-bottom: 150px;
 }
 
-.icon-close{
+.icon-close {
   cursor: pointer;
   font-size: 23px;
 }
-.icon-close:hover i{
+
+.icon-close:hover i {
   color: #f8f9fa;
   transition: .3s all ease;
 }
 
-
 .offcanvas-menu .site-mobile-menu {
   -webkit-transform: translateX(0%);
   -ms-transform: translateX(0%);
-  transform: translateX(0%); }
+  transform: translateX(0%);
+}
 
+  .site-mobile-menu .site-nav-wrap .arrow-collapse {
+    z-index: 20;
+    cursor: pointer;
+  }
 
-
+  .site-mobile-menu .site-nav-wrap .arrow-collapse:hover {
+    background: #f8f9fa;
+  }
+  .site-nav-wrap> button{
+    margin-top: 10px;
+    background-color: #ee4d2d;
+    color: #fff;
+  }
+.logout{
+  background-color: #ee4d2d;
+  text-align: center;
+  height: 32px;
+  width: 200px;
+  line-height: 32px;
+  cursor: pointer;
+}
