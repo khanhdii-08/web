@@ -63,10 +63,6 @@ body.offcanvas-menu:before {
   font-size: 15px;
 }
 
-/* .nav-text-box {
-  width: 92px;
-} */
-
 .nav-icon-box {
   font-size: 20px;
 }
@@ -241,4 +237,87 @@ body.offcanvas-menu:before {
   width: 200px;
   line-height: 32px;
   cursor: pointer;
+}
+/* end header */
+
+
+.item{
+  text-align: center;
+}
+.sale__wrap-img{
+  background-color: #f7f2f1;
+  position: relative;
+  overflow: hidden;
+}
+
+.sale__item-link{
+  text-decoration: none;
+  display: block;
+}
+
+/* ens carousel */
+
+
+
+.img-service{
+  width: 45px;
+  height: 45px;
+  margin-right: 16px;
+}
+.service-span{
+  font-weight: bold;
+}
+
+.txt-service{
+  border: 1px solid black;
+  margin-right: 16px;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 6px 16px;
+}
+.txt-service:focus{
+  border-color: red;
+  outline: 0;
+}
+.btn-service{
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+.btn-service:hover{
+  background-color: #b52b27;
+}
+.bg-footer{
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-floating{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.footer-link{
+  text-decoration: none;
+}
+.footer-link:hover{
+  color: red !important;
+  text-decoration: none;
+}
+.list-link-footer{
+  margin: 10px 0px;
+}
+.logo-footer{
+  /* height: 70px; */
+  width: 150px;
+}
+.app-footer{
+  width: 200px;
+}
+.tich-apple{
+  width: 200px;
+}
+.txt-footer{
+  font-size: 22px;
+  color:#ff3333;
 }
