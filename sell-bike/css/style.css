@@ -270,6 +270,24 @@ body.offcanvas-menu:before {
   display: block;
 }
 
+.owl-nav{
+}
+.owl-next{
+  position: absolute;
+  right: -30px;
+  top: 25%;
+}
+.owl-prev{
+  position: absolute;
+  left: -30px;
+  top: 25%;
+}
+.owl-next span, .owl-prev span {
+  color: #ccc;
+  font-size: 4rem;
+  line-height: 2rem;
+  display: inline-block;
+}
 /* ens carousel */
 
 
