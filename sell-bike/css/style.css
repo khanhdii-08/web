@@ -244,11 +244,20 @@ body.offcanvas-menu:before {
 .item{
   text-align: center;
 }
+.item:hover .sale__view{
+    transform: translateY(100%);
+}
+.sale__view{
+  background-color: #f4f4f4;
+  opacity: 0.92;
+  position: absolute;
+  width: 100%;
+}
 .sale__wrap-img{
-  background-color: #f7f2f1;
   position: relative;
   overflow: hidden;
 }
+
 
 .sale__item-link{
   text-decoration: none;
