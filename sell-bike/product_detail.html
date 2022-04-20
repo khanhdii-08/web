@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết</title>
+
+    <link rel="stylesheet" type="text/css" href="css/xzoom.css" media="all">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="font/font-awesome-6/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_product_detail.css">
+</head>
+
+<body>
+    <header class="cotainer">
+        <div class="overlay-nav"></div>
+
+        <div class="site-mobile-menu">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close icon-close mt-3 js-menu-toggle">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body">
+                <a href="#" class="text-black text-decoration-none mx-3 position-relative d-flex">
+                    <div class="nav-icon-box position-absolute top-50 start-0 translate-middle">
+                        <i class="fa fa-user text-black-50"></i>
+                    </div>
+                    <div class="nav-text-box ms-4 ">
+                        <small class="text-black-50 d-block">Hello, Sign in</small>
+                        My Account
+                    </div>
+                </a>
+
+                <a href="#" class="text-black text-decoration-none mx-3 position-relative d-flex">
+                    <div class="nav-icon-box position-absolute top-50 start-0 translate-middle">
+                        <i class="fa fa-cart-shopping text-black-50"></i>
+                    </div>
+                    <div class="nav-text-box ms-4 ">
+                        <small class="text-black-50 d-block">My cart</small>
+                        $265.00
+                    </div>
+                </a>
+
+                <ul class="site-nav-wrap">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li class="">
+                        <a href="#">Sản Phẩm
+                            <span class="arrow-collapse">
+                                <i class="fa-solid fa-caret-down"></i>
+                            </span>
+                        </a>
+                        <ul class="collapse">
+                            <li><a href="#">Menu One</a></li>
+                            <li><a href="#">Menu Two</a></li>
+                            <li><a href="#">Menu Three</a></li>
+                            <li><a href="#">Menu Four</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Về Chúng Tôi</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                    <li><a href="#">Thông Tin</a></li>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="logout">Logout</div>
+            </div>
+        </div>
+
+        <div class="site-navbar">
+
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-3 col-xl-2 p-0 d-flex justify-content-center">
+                    <a href="index.html">
+                        <img class="site-logo mb-0" src="./images/login.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class="col-7 col-xl-7 nav-search position-relative p-0">
+                    <button
+                        class="btn btn-search position-absolute end-0 bottom-0 h-100 d-flex justify-content-center align-items-center">
+                        <i class="nav-icon-search fa fa-search"></i>
+                    </button>
+                    <input type="text" class="form-control nav-input-search pe-5" placeholder="Search..."
+                        autocomplete="on">
+                </div>
+                <div class="col-3 col-xl-3 d-none d-xl-flex">
+                    <a href="#" class="text-black text-decoration-none mx-3 position-relative d-flex">
+                        <div class="nav-icon-box position-absolute top-50 start-0 translate-middle">
+                            <i class="fa fa-user text-black-50"></i>
+                        </div>
+                        <div class="nav-text-box ms-4 ">
+                            <small class="text-black-50 d-block">Hello, Sign in</small>
+                            My Account
+                        </div>
+                    </a>
+
+                    <a href="#" class="text-black text-decoration-none mx-3 position-relative d-flex">
+                        <div class="nav-icon-box position-absolute top-50 start-0 translate-middle">
+                            <i class="fa fa-cart-shopping text-black-50"></i>
+                        </div>
+                        <div class="nav-text-box ms-4 ">
+                            <small class="text-black-50 d-block">My cart</small>
+                            $265.00
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-2 d-inline-block d-xl-none ml-md-0 "
+                    style="position: relative; text-align: center; font-size: 23px;">
+                    <a href="#" class="site-menu-toggle js-menu-toggle text-white">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav>
+                        <ul class="site-menu d-flex justify-content-center align-items-center">
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li class="has-children ">
+                                <a href="#">Sản Phẩm
+                                    <span class="arrow-collapse">
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </span>
+                                </a>
+                                <ul class="dropdown arrow-top">
+                                    <li><a href="#">Menu One</a></li>
+                                    <li><a href="#">Menu Two</a></li>
+                                    <li><a href="#">Menu Three</a></li>
+                                    <li><a href="#">Menu Four</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Về Chúng Tôi</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                            <li><a href="#">Thông Tin</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <div class="container">
+        <div class="back " style="padding-top: 1.75em;">
+            <a href="/index.html">Trang chủ</a> / <a href="#">Sản Phẩm</a> / Xe đạp điện gấp Homesheel AIRWHEEL E3
+        </div>
+        <h1 class="text-center py-3 product__detail-title">Thông tin sản phẩm</h1>
+
+        <div class="row mt-2 mb-4">
+            <div class="col col-12 col-md-5 wrapImage p-0">
+                <div class="xzoom-container ">
+                    <img class="xzoom " id="xzoom-default" src="images/products/product_01.jpg"
+                        xoriginal="images/products/product_01.jpg" style="width: 100%;">
+                    <!-- <div class="xzoom-thumbs mt-3">
+                        <a href="images/products/product_01.jpg">
+                            <img class="xzoom-gallery xactive" width="80" src="images/products/product_01.jpg"
+                                xpreview="images/products/product_01.jpg">
+                        </a>
+                        <a href="images/products/product_02.jpg">
+                            <img class="xzoom-gallery" width="80" src="images/products/product_02.jpg">
+                        </a>
+                        <a href="images/products/product_03.jpg">
+                            <img class="xzoom-gallery" width="80" src="images/products/product_03.jpg">
+                        </a>
+                        <a href="images/products/product_04.jpg">
+                            <img class="xzoom-gallery" width="80" src="images/products/product_04.jpg">
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="col col-12 col-md-7 wrapImage p-0">
+                abc 
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/xzoom.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/setup.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
