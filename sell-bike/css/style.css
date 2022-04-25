@@ -318,3 +318,9 @@
 .btn-service:hover{
   background-color: #b52b27;
 }
+
+.btn-floating{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
